@@ -1,61 +1,6 @@
 
  
-            {
-
-                    printf("All Student's Record\n");
-                    printf("|  Roll\t|\tNAME \t|PAPER I Marks \t|PAPER II Marks\t|PAPER III Marks |  RESULT | REMARKS |\n");
-
-             for(int i=0;i<k;i++)
-
-              {
-
-                if(s[i].roll!=0)
-                {
-                    if (s[i].result>=130 && s[i].paper1>=35 && s[i].paper2>=35 && s[i].paper3>=35)
-                    printf("| %d\t|\t%s\t|\t%d\t|\t%d\t|\t%d\t |\t%d|\tPASS |   \n",s[i].roll,s[i].name,s[i].paper1,s[i].paper2,s[i].paper3,s[i].result,s[i].remark);
-                    else
-                    printf("| %d\t|\t%s\t|\t%d\t|\t%d\t|\t%d\t |\t%d |\tFAIL |\n",s[i].roll,s[i].name,s[i].paper1,s[i].paper2,s[i].paper3,s[i].result,s[i].remark);
-                }
-              }
-             }
-
-
-            break;
-
-  case 3 :    printf(" 3. Delete Student\n");
-              {
-                  printf("Enter Student Roll No.");
-              scanf("%d",&temproll);
-              printf("Do You really want to delete this record?\n");
-              printf("1. Yes\n");
-              printf("0. No\n");
-              printf("Enter Your Choice:");
-              scanf("%d",&ch);
-              switch(ch)
-              {
-              case 1:
-                  for(i=0;i<k;i++)
-                  {
-                   if(temproll==s[i].roll)
-                   {
-                     s[i].roll=0;
-                     strcpy(s[i].name," ");
-                     for(int i=0;i<k;i++)
-                     {
-                     if(s[i].roll!=0)
-
-                        {
-                        if (s[i].result>=130 && s[i].paper1>=35 && s[i].paper2>=35 && s[i].paper3>=35)
-                    printf("| %d\t|\t%s\t|\t%d\t|\t%d\t|\t%d\t |\t%d|\tPASS |   \n",s[i].roll,s[i].name,s[i].paper1,s[i].paper2,s[i].paper3,s[i].result,s[i].remark);
-                    else
-                    printf("| %d\t|\t%s\t|\t%d\t|\t%d\t|\t%d\t |\t%d |\tFAIL |\n",s[i].roll,s[i].name,s[i].paper1,s[i].paper2,s[i].paper3,s[i].result,s[i].remark);
-                      }
-                     }
-
-
-                   }
-
-                  }
+           
                   printf("...OK RECORD DELETED\n");
                   break;
               case 0:
