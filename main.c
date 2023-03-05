@@ -1,58 +1,5 @@
 
-  case 1 : printf(" 1. Add Student\n");
-          {
-              i=k;
-
-              printf("Enter number of students :");
-              scanf("%d",&n);
-              k=n+i;
-              printf("\n");
-               for(;i<k;i++)
-                 {
-
-
-                printf("student:%d\n",count++);
-                printf("Enter name :");
-                scanf(" %s",&s[i].name);
-                printf("Enter Roll No.:");
-                scanf(" %d",&s[i].roll);
-
-                printf("Enter PAPER I Marks:");
-                scanf(" %d",&s[i].paper1);
-                while(s[i].paper1>100)
-                {
-                   printf("INVALID MARKS PLEASE ENTER PAPER I Marks AGAIN:");
-                    scanf(" %d",&s[i].paper1);
-                }
-
-                printf("Enter PAPER II Marks:");
-                scanf(" %d",&s[i].paper2);
-                while(s[i].paper2>100)
-                {
-                   printf("INVALID MARKS PLEASE ENTER PAPER II Marks AGAIN:");
-                    scanf(" %d",&s[i].paper2);
-                }
-                printf("Enter PAPER III Marks:");
-                scanf(" %d",&s[i].paper3);
-
-                while(s[i].paper3>100)
-                {
-                   printf("INVALID MARKS PLEASE ENTER PAPER III Marks AGAIN:");
-                    scanf(" %d",&s[i].paper3);
-                }
-                s[i].result=s[i].paper1+s[i].paper2+s[i].paper3;
-
-
-                 }
-
-
-
-                printf("All Record Saved !!!");
-          }
-          break;
-
-  case 2 :
-           printf(" 2. Show Student\n");
+ 
             {
 
                     printf("All Student's Record\n");
