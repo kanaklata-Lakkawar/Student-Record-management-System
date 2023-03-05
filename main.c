@@ -1,48 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-void menu()
-{
-    printf("\n");
-   printf(" 1. Add Student\n");
-   printf(" 2. Show Student\n");
-   printf(" 3. Delete Student\n");
-   printf(" 4. Update Student\n");
-   printf(" 5. Search Student\n");
-   printf(" 0. Exit\n");
-   printf("\n");
-}
-struct Student
-{
-    int roll;
-    char name[20];
-    int paper1;
-    int paper2;
-    int paper3;
-    int result;
-    char remark[6];
 
-};
-
-int main()
-
-{
-   int choice,loop=1,i=0,k=0,n,count=1,ch,temproll,lp,tempPaper1,tempPaper2,tempPaper3,subch1,subch2,subch3,subch4;
-   char tempName[20];
-
-
-   printf("welcome to Student Management System\n");
-   struct Student s[20];
-
-while(loop)
-{
-   menu();
-printf("Enter Your Choice:");
-scanf("%d",&choice);
-
-
-
-switch(choice)
-{
   case 1 : printf(" 1. Add Student\n");
           {
               i=k;
