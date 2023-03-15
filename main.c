@@ -27,7 +27,6 @@ struct Student
 };
 
 int main()
-
 {
    int loop=1,i=0,k=0,n,count=1,ch,temproll,lp,tempPaper1,tempPaper2,tempPaper3,subch1,subch2,subch3,subch4;
    char tempName[20];
