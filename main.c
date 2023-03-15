@@ -25,7 +25,6 @@ struct Student
     int result;
     char remark[6];
 };
-
 int main()
 
 {
