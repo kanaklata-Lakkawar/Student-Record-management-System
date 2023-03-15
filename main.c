@@ -237,7 +237,6 @@ case 4 :      printf("-----------------------------------::UPDATE STUDENT::-----
 }
 }
           break;
-
 case 5 :
            printf("-----------------------------------::SEARCH STUDENT::--------------------------------------------\n");
            printf(" 1.Search by name\n");
@@ -299,7 +298,7 @@ case 0 :
                     break;
               case 2:
                       loop=1;
-                    break;
+                      break;
               }
              break;
 default:
